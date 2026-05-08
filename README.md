@@ -1,7 +1,7 @@
 # Workshop
 Brief Repo that keeps my Workshop setup and documents improvements
 
-![Taller](misc/mmmm/img/1000083418.jpg)
+![Taller](./misc/img/1000083418.jpg)
 
 # Components
 
