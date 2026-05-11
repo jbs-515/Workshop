@@ -97,19 +97,74 @@ Fuentes típicas de incertidumbre:
 Esta clase de incertidumbre no se estima, se calcula a partir de todas las fuentes que puedan hacer que la medición varíe. Y k es el "factor de cobertura" que se usa para pasar de una incertidumbre base a una expandida.
 
 $$
-u = incertidumbre base
-U = incertidumbre expandida
+u = incertidumbre_base
+$$
 
+$$
+U = incertidumbre_expandida
+$$
+
+$$
 U = k * u
-
 $$
 
 >[!NOTE]
 >k=2 suele darse para dar una cobertura aproximada del 95%, siempre que las condiciones estadisticas sean razonables (la cobertura si que se elige a dedo)
->
->
 
+### ¿Como convertir cada fuente en incertidumbre estandar?
 
+Hay que identificar las fuentes de incertidumbre que se aplican a nuestra calibración, y no tenemos por que usar todas, solo las relevantes y justificadas.
+
+Aquí viene lo importante: todas las fuentes deben convertirse a la misma forma, llamada incertidumbre estándar, normalmente equivalente a una desviación típica.
+
+| Fuente              |                  Valor estimado | Cómo se convierte |        u |
+| ------------------- | ------------------------------: | ----------------: | -------: |
+| Patrón de torque    |                   ±0.10 Nm, k=2 |          0.10 / 2 | 0.050 Nm |
+| Resolución          |                          0.1 Nm |         0.1 / √12 | 0.029 Nm |
+| Repetibilidad       | desviación típica de mediciones |    ya es estándar | 0.120 Nm |
+| Temperatura/montaje |   ±0.10 Nm estimado rectangular |         0.10 / √3 | 0.058 Nm |
+
+Si las analizamos una por una obtenemos:
+
+Incertidumbre del patrón -> segun el certificado del patron nos indica Uncertainty=+-0.10Nm, k=2. Lo cual ya suele incluir la incertidumbre espandida, pero la pasamos a la incertidumbre base dividiendolo entre el k empleado.
+
+Incertidumbre del instrumento -> directamente relacionado con su resolución. Supongamos que el banco de torque muestra 100.0 ; 100.1 ; 100.2 ; ...; con esto sabemos que su resolución es de 0.1 Nm. Como no sabes donde está el valor dentro del ultimo dígito, se suele tratar como distribución rectangular
+
+$$
+u_resolución = resolución/√12
+$$
+
+en este caso
+
+$$
+u_resolución = 0.1 / √12 = 0.029 Nm
+$$
+
+Otra forma equivalente es con el semiancho
+
+$$
+semiancho = resolución / 2 = 0.05 Nm
+$$
+
+$$
+u = semiancho/ √3 = 0.029 Nm
+$$
+
+Incertidumbre de repetibilidad -> en este caso se hacen varias mediciones en las mismas condiciones. Por ejemplo con la misma llave heciendo pruebas a 100 Nm obtenemos 100.3Nm ; 100.5Nm ; 100.4Nm ; 100.6Nm ; 100.2Nm. 
+A partir de estos valores se calcula la desviación típica (la media de la diferencia de los resultados hasta el valor objetivo) 
+
+$$
+s = 0.16 Nm
+$$
+
+$$
+u_repeat = s/√n = 0.16 / √5 = 0.072 Nm
+$$
+
+>[!WARNING]
+>Algunos procedimientos usan directamente la repetibilidad observada o el maximo rango, dependiendo de la guia tecnica
+
+Incertidumbre por temperatura, montaje, operador, histeresis -> 
 
 ---
 ---
