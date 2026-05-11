@@ -1,3 +1,88 @@
+# ISO_IEC 17025
+
+Es la norma internacional usada para demostrar que un laboratorio opera de forma competente y puede generar resultados válidos.
+Exige, no solo conocer el procedimiento de calibración para una herramienta/máquina, si no tambien poder demostrar y corroborar que los resultados son tecnicamente válidos.
+
+## Calibración, Verificaciñon y Ajuste.
+Existe una diferencia fundamental entre estos tres conceptos que es necesario aplicar.
+
+### CALIBRACIÓN
+
+Es comparar un instrumento con un patrón ya conocido y trazable. Como tener una dinamometrica que indica estar ajustada a 100 Nm; la colocas en un banco patrón y en la prueba se dispara a 101.2 Nm
+
+* Valor nominal: 100 Nm
+
+* Valor medido: 101.2 Nm
+
+* Error: +1.2 Nm
+
+La calibración no tiene por que implicar tocar o corregir la herramienta. Pero si que requiere obligatoriamente medirla y documentarla.
+
+### VERIFICACIÓN
+
+Es decidir si el instrumento cumple o no una especificación atribuida al mismo.
+
+* Tolerancia permitida: +-4%
+
+* A 100 Nm, el limite sería 96-104 Nm
+
+* Si mide en la prueba 101.2 Nm, está dentro de lo permitido.
+
+### AJUSTE
+
+Comprende el corregir o modificar la erramienta para reduciar el error.
+
+* La llave dispara a 106 Nm, que se sale de la desviación permitida acorde a la tolerancia para este elemento. En este caso, si dentro de las tareas se encuentra corregirla, se ajustaría el mecanismo y se volvería a medir.
+
+>[!WARNING]
+>El ajuste no sustituye a la calibración. Primero de registra el estado inicial, luego se ajusta si procede, y después se vuelve a calibrar.
+
+
+## As found, As left
+
+Estos son conceptos fundamentales en la calibración para aviación.
+
+### As found
+Se refiere al estado en el que llega la herramienta al laboratorio antes de ajustarla o repararla.
+
+Esto es importante porque la herramienta pudo haberse usado en mantenimiento real antes de llegar al laboratorio, y esto podría desarrollarse en una investigación; en que trabajos se usaron, que aeronave, que fecha,...
+
+### As left
+Se refiere del estado final en el que se devuelve la herramienta, por lo general despues de un ajuste.
+
+>[!WARNING]
+>Nunca se debería de ajustar una herramienta sin registrar primero el as found, porque se perdería la evidencia del estado real en la que estuvo trabajando.
+
+
+## Trazabilidad Metrológica
+La trazabilidad se refiere a que las mediciones pueden relacionarse con una referencia superior mediante una cadena documentada ininterrumpida.
+
+Llave del taller
+↓
+Banco de torque del laboratorio
+↓
+Transductor de torque calibrado
+↓
+Laboratorio acreditado ISO/IEC 17025
+↓
+Instituto nacional de metrología
+↓
+Unidades SI
+
+ILAC P10 trata precisamente la política de trazabilidad metrológica para resultados de medición en ensayos y calibraciones.
+
+En Suiza, el Swiss Accreditation Service también explica que la trazabilidad de equipos y patrones debe asegurarse mediante calibraciones adecuadas y certificados que incluyan resultados e incertidumbre o declaración de conformidad.
+
+Un patrón (elemento para la calibración) no es vaido solo porque sea caro y preciso. Es valido si se encuentra identificado, dentro de fecha, dentro de rango, con una incertidumbre adecuada y una trazabilidad documentada.
+
+## Incertidumbre de medida
+
+
+
+
+---
+---
+
 Método documentado
 
 Para cada herramienta necesitas un procedimiento aprobado:
