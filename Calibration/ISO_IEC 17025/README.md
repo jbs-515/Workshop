@@ -78,7 +78,7 @@ Un patrón (elemento para la calibración) no es vaido solo porque sea caro y pr
 ## Incertidumbre de medida
 Esta caracteristica refiere a la estimación de la duda asociada al resultado.
 
-Por ejemplo cuando mides una llave dinamometrica a 100 Nm y obtienes 100.4 Nm. Con esto establecemos una incertidumbre expandida de +-0.3Nm, k=2. 
+Por ejemplo cuando mides una llave dinamometrica a 100 Nm y obtienes 100.4 Nm. Con esto establecemos una incertidumbre expandida de ±0.3Nm, k=2. 
 Esto quiere decir que el resultado no debemos de interpretarlo como un punto perfecto, si no que en si mismo la medida presenta un intervalo razonable.
 
 Fuentes típicas de incertidumbre:
@@ -164,7 +164,20 @@ $$
 >[!WARNING]
 >Algunos procedimientos usan directamente la repetibilidad observada o el maximo rango, dependiendo de la guia tecnica
 
-Incertidumbre por temperatura, montaje, operador, histeresis -> 
+Incertidumbre por temperatura, montaje, operador, histeresis -> estos valores de incertidumbre son estimados por el propio laboratorio. Por ejemplo, a causa de montaje y alineación puede haber un máximo de ±0.10 Nm
+Y si se asume que cualquier valor dentro de ese intervalo es igualmente probable se usa la distribución rectangular.
+
+$$
+u_montaje=0.10/√3 = 0.058 Nm
+$$
+
+COMBINAR INCERTIDUMBRES -> cuando ya hemos obtenido todas las incertidumbres en forma estandar, se combina por raiz de suma de cuadrados:
+
+$$
+uc = √(u1² + u2² + u3² + u4²...)
+$$
+
+Notar que esto nos da la "incertidumbre estandar combinada", para obtener la incertidumbre expandida aun tenemos que multiplicar por k. Se recomienda redondear, o incluso truncar, a la alta hasta una magnitud de decimal: 0.x
 
 ---
 ---
