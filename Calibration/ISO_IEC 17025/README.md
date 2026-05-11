@@ -179,6 +179,50 @@ $$
 
 Notar que esto nos da la "incertidumbre estandar combinada", para obtener la incertidumbre expandida aun tenemos que multiplicar por k. Se recomienda redondear, o incluso truncar, a la alta hasta una magnitud de decimal: 0.x
 
+
+### Flujo correctod e una calibración
+1. Recepción de la herramienta
+2. Identificación
+3. Revisión visual y funcional
+4. Confirmar procedimiento aplicable
+5. Confirmar tolerancias
+6. Seleccionar patrón trazable
+7. Controlar condiciones ambientales
+8. Medir as found
+9. Calcular error
+10. Estimar incertidumbre
+11. Evaluar conformidad
+12. Ajustar/reparar si procede
+13. Medir as left
+14. Emitir certificado
+15. Etiquetar y liberar / bloquear
+
+
+## Documentación que debería contener un certificado de calibración
+
+Un certificado serio debería incluir:
+
+* Laboratorio emisor.
+* Identificación del cliente.
+* Identificación del instrumento.
+* Marca, modelo, número de serie.
+* Fecha de calibración.
+* Procedimiento usado.
+* Condiciones ambientales relevantes.
+* Patrones utilizados o trazabilidad.
+* Resultados de medición.
+* Incertidumbre de medición.
+* Criterio de aceptación.
+* Regla de decisión si hay declaración de conformidad.
+* Resultado: conforme/no conforme.
+* Firma o autorización.
+* Limitaciones, si existen.
+
+En SR Technics, por ejemplo, su servicio habla de certificate, findings report y calibration protocol como documentación de salida
+
+
+
+
 ---
 ---
 
