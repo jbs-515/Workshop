@@ -82,39 +82,55 @@ Normalmente se registra:
 ### Inspección visual y funcional
 En una llave dinamométrica
 
-Compruebas:
+| LLave                                   | Multimetro                      | Manómetro             |
+| --------------------------------------- | ------------------------------: | --------------------: |
+| Golpes                                  | Pantalla                        |                 Rosca |
+| Deformaciones                           | Batería                         |       Cristal/display |
+| Carraca dañada.                         | Fusibles                        |                 Aguja |
+| Escala legible.                         | Bornes                          |                  Cero |
+| Mecanismo de bloqueo                    | Carcasa                         |        Fugas visibles |
+| Unidad correcta.                        | Selector                        |                 Rango |
+| Mango en buen estado                    | Puntas de prueba                |                Unidad |
+| Si vuelve a cero o al mínimo de escala. | Etiqueta de calibración         | Sobrepresión aparente |
+| Si hay adaptadores.                     | Seguridad CAT, si aplica        |                     - |
 
-* Golpes.
-* Deformaciones.
-* Carraca dañada.
-* Escala legible.
-* Mecanismo de bloqueo.
-* Unidad correcta.
-* Mango en buen estado.
-* Si vuelve a cero o al mínimo de escala.
-* Si hay adaptadores.
-* En un multímetro
+Si detectas daño grave, no sigues como si nada. Puedes emitir:
 
-Compruebas:
+- Rejected before calibration
+- Not calibratable
+- Repair required
+- Limited calibration
 
-* Pantalla.
-* Batería.
-* Fusibles.
-* Bornes.
-* Carcasa.
-* Selector.
-* Puntas de prueba.
-* Etiqueta de calibración.
-* Seguridad CAT, si aplica.
-* En un manómetro
+### Revisión de solicitud
+En SR Technics, por ejemplo, su servicio habla de distintos entregables como certificate, findings report y calibration protocol, y cubre herramientas eléctricas, mecánicas, presión, longitud y aviónica.
 
-Compruebas:
+En una empresa real puede haber varios niveles:
 
-* Rosca.
-* Cristal/display.
-* Aguja.
-* Cero.
-* Fugas visibles.
-* Rango.
-* Unidad.
-* Sobrepresión aparente.
+| Solicitud                   | Qué significa                                        |
+| --------------------------- | ---------------------------------------------------- |
+| Calibration only            | Mides y documentas, sin ajustar                      |
+| Calibration with adjustment | Mides as found, ajustas si hace falta, mides as left |
+| Repair + calibration        | Reparas y luego calibras                             |
+| Verification                | Solo pass/fail contra tolerancia                     |
+| Accredited calibration      | Dentro del alcance acreditado ISO/IEC 17025          |
+| Internal check              | Control interno, quizá no acreditado                 |
+
+>[!CAUTION]
+>Pregunta siempre si tienes autoridad para ajustar o solo para medir
+
+### Confirmación del Procedimiento aplicable
+Debes tener un procedimiento, por ejemplo:
+
+>Internal procedure CAL-TOR-001 for torque wrenches
+>
+>Manufacturer manual
+>
+>EURAMET guide
+>
+>Customer-specific procedure
+>
+>Aircraft maintenance organization requirement
+
+
+
+
