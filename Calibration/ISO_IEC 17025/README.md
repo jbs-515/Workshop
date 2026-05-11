@@ -76,7 +76,38 @@ En Suiza, el Swiss Accreditation Service también explica que la trazabilidad de
 Un patrón (elemento para la calibración) no es vaido solo porque sea caro y preciso. Es valido si se encuentra identificado, dentro de fecha, dentro de rango, con una incertidumbre adecuada y una trazabilidad documentada.
 
 ## Incertidumbre de medida
+Esta caracteristica refiere a la estimación de la duda asociada al resultado.
 
+Por ejemplo cuando mides una llave dinamometrica a 100 Nm y obtienes 100.4 Nm. Con esto establecemos una incertidumbre expandida de +-0.3Nm, k=2. 
+Esto quiere decir que el resultado no debemos de interpretarlo como un punto perfecto, si no que en si mismo la medida presenta un intervalo razonable.
+
+Fuentes típicas de incertidumbre:
+* Incertidumbre en el patrón
+* Resolución del instrumento
+* Repetibilidad
+* Histeresis
+* Deriva del patrón desde su ultima calibración
+* Temperatura
+* Humedad
+* Técnica del operador
+* Montaje mecánico
+* Estabilidad electrica
+* Lectura analógica/paralaje
+
+Esta clase de incertidumbre no se estima, se calcula a partir de todas las fuentes que puedan hacer que la medición varíe. Y k es el "factor de cobertura" que se usa para pasar de una incertidumbre base a una expandida.
+
+$$
+u = incertidumbre base
+U = incertidumbre expandida
+
+U = k * u
+
+$$
+
+>[!NOTE]
+>k=2 suele darse para dar una cobertura aproximada del 95%, siempre que las condiciones estadisticas sean razonables (la cobertura si que se elige a dedo)
+>
+>
 
 
 
