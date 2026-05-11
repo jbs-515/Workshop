@@ -50,12 +50,13 @@ Error:
 
 Ahora incertidumbre.
 
-Fuente	Dato	u
-Pressure calibrator	±0.010 bar, k=2	0.005 bar
-Resolución manómetro	0.01 bar	0.01 / √12 = 0.0029 bar
-Repetibilidad	s/√n	0.0037 bar aprox.
-Estabilidad presión	±0.005 bar	0.005 / √3 = 0.0029 bar
-Temperatura/fugas	±0.006 bar	0.006 / √3 = 0.0035 bar
+| Fuente               |            Dato |                       u |
+| -------------------- | --------------: | ----------------------: |
+| Pressure calibrator  | ±0.010 bar, k=2 |               0.005 bar |
+| Resolución manómetro |        0.01 bar | 0.01 / √12 = 0.0029 bar |
+| Repetibilidad        |            s/√n |       0.0037 bar aprox. |
+| Estabilidad presión  |      ±0.005 bar | 0.005 / √3 = 0.0029 bar |
+| Temperatura/fugas    |      ±0.006 bar | 0.006 / √3 = 0.0035 bar |
 
 Combinación:
 
