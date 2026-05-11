@@ -180,22 +180,25 @@ $$
 Notar que esto nos da la "incertidumbre estandar combinada", para obtener la incertidumbre expandida aun tenemos que multiplicar por k. Se recomienda redondear, o incluso truncar, a la alta hasta una magnitud de decimal: 0.x
 
 
-### Flujo correctod e una calibración
+### Flujo correcto de una calibración
 1. Recepción de la herramienta
 2. Identificación
-3. Revisión visual y funcional
-4. Confirmar procedimiento aplicable
-5. Confirmar tolerancias
-6. Seleccionar patrón trazable
-7. Controlar condiciones ambientales
-8. Medir as found
-9. Calcular error
-10. Estimar incertidumbre
-11. Evaluar conformidad
-12. Ajustar/reparar si procede
-13. Medir as left
-14. Emitir certificado
-15. Etiquetar y liberar / bloquear
+3. Inspección visual y funcional
+4. Revisión de solicitud del cliente/taller
+5. Confirmación del procedimiento aplicable
+6. Confirmación de tolerancias
+7. Selección de patrón trazable
+8. Verificación de condiciones ambientales
+9. Medición as found
+10. Cálculo de error
+11. Estimación/aplicación de incertidumbre
+12. Evaluación de conformidad
+13. Ajuste/reparación si procede
+14. Medición as left
+15. Certificado/informe/protocolo
+16. Etiquetado
+17. Liberación o bloqueo
+18. Archivo de registros
 
 
 ## Documentación que debería contener un certificado de calibración
