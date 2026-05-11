@@ -61,6 +61,7 @@ Ahora incertidumbre.
 Combinación:
 
 uc = √(0.005² + 0.0029² + 0.0037² + 0.0029² + 0.0035²)
+
 uc ≈ 0.0082 bar
 
 Expandida:
@@ -70,11 +71,12 @@ U = 2 · 0.0082 = 0.0164 bar
 Resultado:
 
 Error a 10 bar: +0.042 bar
+
 Incertidumbre expandida: ±0.017 bar, k=2
 
 Certificado expresado como:
 
-Valor patrón: 10.000 bar
-Lectura instrumento: 10.042 bar
-Error: +0.042 bar
-U = ±0.017 bar, k=2
+* Valor patrón: 10.000 bar
+* Lectura instrumento: 10.042 bar
+* Error: +0.042 bar
+* U = ±0.017 bar, k=2
