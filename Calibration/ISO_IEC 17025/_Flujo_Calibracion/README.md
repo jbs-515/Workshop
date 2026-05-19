@@ -131,6 +131,25 @@ Debes tener un procedimiento, por ejemplo:
 >
 >Aircraft maintenance organization requirement
 
+El procedimiento debe definir:
 
+* Rango aplicable.
+* Equipos necesarios.
+* Condiciones ambientales.
+* Puntos de medición.
+* Número de repeticiones.
+* Secuencia.
+* Cálculo.
+* Tolerancias.
+* Criterio de aceptación.
+* Formato de registro.
 
+| Ejemplo llave torque                 | Ejemplo manómetro                                      |
+| :-------------------------- | ---------------------------------------------------: |
+| Calibration only            | Mides y documentas, sin ajustar                      |
+| Calibration with adjustment | Mides as found, ajustas si hace falta, mides as left |
+| Repair + calibration        | Reparas y luego calibras                             |
+| Verification                | Solo pass/fail contra tolerancia                     |
+| Accredited calibration      | Dentro del alcance acreditado ISO/IEC 17025          |
+| Internal check              | Control interno, quizá no acreditado                 |
 
