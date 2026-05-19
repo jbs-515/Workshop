@@ -223,3 +223,89 @@ Tenemos claro que las condiciones ambientales pueden afectar a la medición. Com
 | Alineación               | Manipulación con las manos   | Tipo de fluido                            | Ruido eléctrico      |
 |                          |                              | Altura de columna, si aplica              | Cables y conexiones  |
 |                          |                              | Presión atmosferica para presión absoluta |                      |
+
+### Medicion "as found"
+
+Practica indispensable antes de alterar nada para corroborar el estado de la herramienta.
+
+### Regitro de datos
+Por lo general buscamos que incluya:
+- Instrument ID
+- Date
+- Technician
+- Procedure
+- Environmental conditions
+- Reference standard used
+- Nominal point
+- Reference value
+- Indicated value
+- Error
+- Uncertainty
+- Tolerance
+- Pass/fail
+- Comments
+
+Ejemplo simple:
+| Punto nominal | Valor patrón | Lectura instrumento |   Error | Tolerancia | Resultado |
+| ------------: | -----------: | ------------------: | ------: | ---------: | --------- |
+|         50 Nm |     50.00 Nm |             50.6 Nm | +0.6 Nm |    ±2.0 Nm | Pass      |
+|        100 Nm |    100.00 Nm |            103.2 Nm | +3.2 Nm |    ±4.0 Nm | Pass      |
+|        150 Nm |    150.00 Nm |            156.8 Nm | +6.8 Nm |    ±6.0 Nm | Fail      |
+
+>[!IMPORTANT]
+>No se altera ningun valor para que "cuadre", si no cumple, no cumple. Es mejor retrasar el flujo de trabajo que causar un accidente irremediable.
+
+### Calculo del error
+De lo mas sencillo de todo, es solo la diferencia entre el valor del instrumento y el valor del patrón
+
+$$
+Error = Valor_Patron / Valor_Instrumento
+$$
+
+Si es positivo el instrumento indica alto, si es menos, el instrumento indica bajo.
+
+### Incertidumbre
+En muchos laboratorios la incertidumbre no se calcula desde cero, cada vez, si no que presentan una especie de "presupuesto de incertidumbre" validadopara cada tipo de calibración
+
+Procedure CAL-TOR-001
+
+CMC/uncertainty for 100 Nm: ±0.25 Nm, k=2
+
+### Evaluación de conformidad
+En esto se resume todo este proceso, la decisión justificada de si una herramienta pasa las especificaciones requeridas o no.
+
+Por ejemplo con los siguientes parametros:
+
+- Tolerancia: ±4 Nm
+- Error: +2.0 Nm
+- Incertidumbre: ±0.3 Nm
+
+$$
+2.0 + 0.3 = 2.3 Nm
+$$
+
+Se encuentra dentro de los limites de tolerancia, por lo tanto se cataloga como Conforme. Pero podemos encontrarnos con una situación de clasificación dudosa.
+Con los siguientes datos:
+- Tolerancia: ±4 Nm
+- Error: +3.9 Nm
+- Incertidumbre: ±0.3 Nm
+
+3.9 se encuentra dentro de ±4, pero siguiendo una regulación más conservadora, la incertidumbre lo saca de la zona de validación.
+
+$$
+3.9 + 0.3 = 4.2
+$$
+
+### Ajuste o Reparación
+Si la herramienta falla no siempre se ajusta automaticamente
+* ¿Está autorizado el ajuste?
+* ¿El procedimiento lo permite?
+* ¿Hay que informar al cliente?
+* ¿Se requiere findings report?
+* ¿Se puede reparar internamente?
+* ¿Debe bloquearse?
+
+En caso de estar permitido el ajuste y de realizarlo, se registran de nuevo las mediciones "as left". 
+Y en el certificado o informe debe de constatar de manera clara que la herramienta se encontraba fuera de tolerancia antes del ajuste.
+
+### Certificado, findings report y protocolo (documentación)
