@@ -36,3 +36,5 @@ No preacondicionar la llave.
 Usar adaptadores sin corregir brazo de palanca.
 
 No respetar unidades: Nm, lbf·ft, lbf·in.
+
+# Ejemplo de flujo de calibración para una llave dinamometrica
