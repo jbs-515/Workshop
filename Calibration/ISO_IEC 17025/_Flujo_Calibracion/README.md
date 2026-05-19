@@ -309,3 +309,14 @@ En caso de estar permitido el ajuste y de realizarlo, se registran de nuevo las 
 Y en el certificado o informe debe de constatar de manera clara que la herramienta se encontraba fuera de tolerancia antes del ajuste.
 
 ### Certificado, findings report y protocolo (documentación)
+
+### Etiquetado
+
+### Intervalo de recalibración
+
+### En caso de hayar una herramienta fuera de tolerancia
+Tras establecer que una herramienta de ha encontrado fuera de tolerancia "as found" se debería de alertar aguas abajo todos los procesos realizados con dicha herramienta, 
+puesto que han podido realizarse de forma defectuosa a causa de la herramienta.
+
+
+
