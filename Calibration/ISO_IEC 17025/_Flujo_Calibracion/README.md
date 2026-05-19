@@ -144,12 +144,82 @@ El procedimiento debe definir:
 * Criterio de aceptación.
 * Formato de registro.
 
-| Ejemplo llave torque                 | Ejemplo manómetro                                      |
-| :-------------------------- | ---------------------------------------------------: |
-| Calibration only            | Mides y documentas, sin ajustar                      |
-| Calibration with adjustment | Mides as found, ajustas si hace falta, mides as left |
-| Repair + calibration        | Reparas y luego calibras                             |
-| Verification                | Solo pass/fail contra tolerancia                     |
-| Accredited calibration      | Dentro del alcance acreditado ISO/IEC 17025          |
-| Internal check              | Control interno, quizá no acreditado                 |
+| Ejemplo llave torque                                       | Ejemplo manómetro                                    |
+| :--------------------------------------------------------- | ---------------------------------------------------: |
+| Puntos: 20 %, 60 %, 100 % del rango                        | Puntos: 0 %, 25 %, 50 %, 75 %, 100 %                 |
+| Repeticiones: 5 por punto                                  | Secuencia: ascendente y descendente                  |
+| Dirección: clockwise, counterclockwise if applicable       | Estabilización: esperar hasta lectura estable        |
+| Preload: 3 activaciones antes de registrar                 | Leak check: obligatorio antes de medición            |
 
+### Confirmación de tolerancia
+Las tolerancias pueden venir de varias fuentes, como el fabricante, procedimientos internos, trabajar en caliente, la normativa tecnica, los requisitos, el historial, etc.
+
+>Ejemplo:
+>Torque wrench tolerance: ±4 % of indicated value
+>
+>Pressure gauge tolerance: ±0.25 % FS
+>
+>Digital multimeter: manufacturer specification ±(% reading + digits)
+>
+>Caliper: ±0.02 mm
+
+>[!WARNING]
+>Se debe de tener cuidado con las tolerancias FS (Full Scale) y las tolerancias de lectura.
+>
+>El porcentaje de tolerancia en FS es establecido respecto a un rango predefinido (se mantiene constante dentro de ese rango)
+>
+>Mientras que la tolerancia de lectura es el porcentaje incremental que se aplica a cada valor concreto (incrementando así junto a la magnitud que se mida)
+
+
+### Selección del patron adecuado
+El patrón debe ser adecuado en:
+* Rango.
+* Resolución.
+* Incertidumbre.
+* Estado de calibración.
+* Trazabilidad.
+* Compatibilidad física.
+* Condiciones de uso.
+
+No deberías calibrar una llave de 200 Nm con un patrón cuyo rango máximo fiable es 100 Nm.
+Tampoco deberías usar un calibrador de presión con incertidumbre demasiado grande para evaluar un manómetro muy preciso.
+
+Para estos casos existe la regla TUR (Test Uncertainity Ratio)
+
+$$
+TUR = tolerancia del instrumento / incertidumbre del sistema de calibración
+$$
+
+Es una regla antigua y no debería ser un pilar para la fiabilidad del proceso, pero puede ser util para una rapida estimación.
+
+### Verificación del patrón
+
+* ¿Está identificado?
+* ¿Está dentro de fecha?
+* ¿Tiene certificado válido?
+* ¿Cubre el rango?
+* ¿Su incertidumbre es adecuada?
+* ¿Tiene restricciones?
+* ¿Necesita warm-up?
+* ¿Necesita cero?
+* ¿Tiene daños?
+
+### Condiciones ambientales
+Tenemos claro que las condiciones ambientales pueden afectar a la medición. Como norma general se deben de controlar los soguientes parámetros:
+* Temperatura.
+* Humedad.
+* Presión atmosférica, si aplica.
+* Vibración.
+* Limpieza.
+* Estabilidad eléctrica.
+* Tiempo de aclimatación.
+* Corrientes de aire, si aplica.
+
+| Torque                   | Dimensional                  | Presion                                   | Electronica          |
+| ------------------------ | ---------------------------- | ----------------------------------------- | -------------------- | 
+| Montaje                  | Temperatura                  | Temperatura                               | Warm-up              |
+| Temperatura razonable    | Limpieza                     | Fugas                                     | Temperatura          |
+| Estabilidad mecánica     | Dilatación termica           | Estabilidad                               | Humedad              |
+| Alineación               | Manipulación con las manos   | Tipo de fluido                            | Ruido eléctrico      |
+|                          |                              | Altura de columna, si aplica              | Cables y conexiones  |
+|                          |                              | Presión atmosferica para presión absoluta |                      |
