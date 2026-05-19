@@ -32,11 +32,3 @@
 | Cable                        |                       |                                  |
 | Bananna/clip connector       |                       |                                  |
 | ESD mat / breace             |                       |                                  |
-
-
-| Tool/Material       |                        Supplier |    Part Number/ID |     Note |
-| ------------------- | ------------------------------: | ----------------: | -------: |
-| Digital Multimeter  |                   ±0.10 Nm, k=2 |          0.10 / 2 | 0.050 Nm |
-| Resolución          |                          0.1 Nm |         0.1 / √12 | 0.029 Nm |
-| Repetibilidad       | desviación típica de mediciones |    ya es estándar | 0.120 Nm |
-| Temperatura/montaje |   ±0.10 Nm estimado rectangular |         0.10 / √3 | 0.058 Nm |
