@@ -14,7 +14,7 @@
 | Heat gun                     |                 RS PRO|                           2024489|
 | Microscope                   |                Bresser|                                  |
 | Magnifier lense              |                   AVEN|            Compatible Region Plug|
-| Fume extractor               |        RS PRO / FARNEL|                                  |
+| Fume extractor               |                 Weller|                        FT91019299|
 | Power Supply                 |                 JOY-IT|                         JT-PS1440|
 |                              |           BK PRECISION|                              9111|
 | Pliers                       |         Kit ESD pliers|                                  |
